@@ -14,4 +14,4 @@ ssh.connect(hostname, port, username, password)
 #read the readme in server and print
 stdin, stdout, stderr = ssh.exec_command(cmd)
 lines = stdout.readlines()
-print(lines)
+print(lines[0])
